@@ -4,12 +4,17 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Diomar Parulan | Portfolio</title>
-	
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="pagePiling.js plugin by Alvaro Trigo." />
+	<meta name="keywords"  content="pile,piling,piling.js,stack,pages,scrolling,stacking,touch,fullpile,scroll,plugin,jquery" />
+	<meta name="Resource-type" content="Document" />
+
 	<link rel="stylesheet" type="text/css" href="css/jquery.pagepiling.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
-	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Allerta+Stencil|Syncopate" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Allerta+Stencil|Syncopate|Raleway" rel="stylesheet">
 
 	
 
@@ -29,6 +34,8 @@
 	    <div class="section" id="section1">
 	    	<!-- <img src="imgs/pagePiling-plugin.gif" alt="pagePiling" /> -->
 			<br />
+
+			<div class="left-bg"></div>
 
 			<div class="avatar">
 				<img src="img/pic.jpg" alt="Skytsunami" />
@@ -58,51 +65,86 @@
 
 	    </div>
 	    <div class="section">
-	    	<div class="intro container portfolio">
+	    	<div class="diagonal-bg"></div>
+	    	<div class="intro container-fluid portfolio">
 	    		<!-- <h1>My Works</h1> -->
 	    		<div class="row webs">
-		    		<div class="web col m4">
-	    			<span data-tilt>
-		    			<a href="https://djparulan.github.io/b5dc-csp1-ecommerce/" target="_blank">
-		    				<img class="col s12 web-pic" src="img/web-1.png">
-		    			</a>
-	    			</span>
-		    			<div class="web-info">
-			    			<h4><span class="text-gray">Schloss</span> Borussen</h4>
-			    			<p>A website for a fictional winery. <span class="text-gray">Built</span> with:</p>
-			    			<p>HTML5, CSS3, Bootstrap</p>
-		    			</div>
-		    		</div>
-		    		<div class="web col m4">
-		    			<a href="https://polynation.000webhostapp.com/" target="_blank">
-		    				<img class="col s12 web-pic" src="img/web-2.png">
-		    			</a>
-		    			<div class="web-info">
-			    			<h4><span class="text-gray">Poly</span>Nation</h4>
-			    			<p>An ecommerce website for shirts with polygon designs. <span class="text-gray">Built</span> with:</p>
-			    			<p>HTML5, CSS3, Materialize, JavaScript, JQuery, PHP, MySql</p>
-		    			</div>
-		    		</div>
-		    		<div class="web col m4">
-		    			<a href="https://hyggeproject.000webhostapp.com/" target="_blank">
-		    				<img class="col s12 web-pic" src="img/web-3.png">
-		    			</a>
-		    			<div class="web-info">
-			    			<h4>Hygge</h4>
-			    			<p>A hygge-themed blogsite. <span class="text-gray">Built</span> with:</p>
-			    			<p>HTML5, CSS3, Bootstrap, Materialize, JavaScript, JQuery, PHP, MySql, Laravel</p>
-		    			</div>
-		    		</div>
+	    			<div class="web-container col m4 s12">
+	    				<a href="https://djparulan.github.io/b5dc-csp1-ecommerce/" target="_blank">
+	    					<div class="web col s12">
+	    						<img class="web-pic" src="img/web-1.png">
+	    						<div class="web-cover">
+	    							<div class="circle-number">
+	    								<h1>1</h1>
+	    							</div>
+	    						</div>
+	    						<div class="web-info">
+	    							<h5>Schloss Borussen</h5>
+	    							<hr class="col s1 line1">
+	    							<hr class="col s10 line2">
+	    							<br>
+	    							<h6>HTML, CSS, Bootstrap</h6>
+	    						</div>
+	    					</div>
+	    				</a>
+	    			</div>
+
+	    			<div class="web-container col m4 s12">
+	    				<a href="https://polynation.000webhostapp.com/" target="_blank">
+	    					<div class="web col s12">
+	    						<img class="web-pic" src="img/web-2.png">
+	    						<div class="web-cover">
+	    							<div class="circle-number">
+	    								<h1>2</h1>
+	    							</div>
+	    						</div>
+	    						<div class="web-info">
+	    							<h5>Schloss Borussen</h5>
+	    							<hr class="col s1 line1">
+	    							<hr class="col s10 line2">
+	    							<br>
+	    							<h6>HTML, CSS, Materialize, Javascript, JQuery, PHP, MySqli</h6>
+	    						</div>
+	    					</div>
+	    				</a>
+	    			</div>
+
+	    			<div class="web-container col m4 s12">
+	    				<a href="https://hyggeproject.000webhostapp.com/login" target="_blank">
+	    					<div class="web col s12">
+	    						<img class="web-pic" src="img/web-3.png">
+	    						<div class="web-cover">
+	    							<div class="circle-number">
+	    								<h1>3</h1>
+	    							</div>
+	    						</div>
+	    						<div class="web-info">
+	    							<h5>Schloss Borussen</h5>
+	    							<hr class="col s1 line1">
+	    							<hr class="col s10 line2">
+	    							<br>
+	    							<h6>HTML, CSS, Bootstrap, Materialize, Javascript, JQuery, PHP, MySqli, Laravel</h6>
+	    						</div>
+	    					</div>
+	    				</a>
+	    			</div>
 	    		</div>
+
+	    		<div class="row">
+	    			<h1 class="portfolio-title">My Works</h1>
+	    		</div>
+
+
 	    	</div>
 	    </div>
 	    <div class="section" id="section3">
+	    	<div class="horizontal-bg"></div>
 	    	<div class="intro container">
 	    		<div class="row">
 		    		<div class="col s6 about-left">
 			    			<div class="col s12">
 			    				<h1>Hello World!</h1>
-			    				<p>I am a former aspiring filmmaker turned web developer, determined to make a career in the tech industry. A graduate of Tuitt Coding Bootcamp, excelling in front-end web development and finishing bootcamp as the top performer of the batch.</p>
+			    				<p>I am a former aspiring filmmaker turned web developer, determined to make a career in the tech industry. A gradute of Tuitt Coding Bootcamp, excelling in front-end web development and finishing bootcamp as the top performer of the batch.</p>
 			    			</div>
 		    		</div>
 		    		<div class="col s6 about-right">
@@ -132,12 +174,14 @@
 	    </div> -->
 	</div>
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
-<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-<script type="text/javascript" src="js/jquery.pagepiling.js"></script>
-<script type="text/javascript" src="js/tilt.jquery.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery.pagepiling.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script src="js/tilt.jquery.js"></script>
 
 </body>
 </html>
+
