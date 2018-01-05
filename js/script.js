@@ -6,7 +6,7 @@ $(document).ready(function() {
       	direction: 'horizontal',
 		menu: '#menu',
 		anchors: ['page1', 'page2', 'page3', 'page4'],
-	    sectionsColor: ['#2C3E50', '#ee005a', '#2C3E50', '#39C'],
+	    sectionsColor: ['#141517', '#141517', '#141517', '#39C'],
 	    navigation: {
 	    	'position': 'right',
 	   		'tooltips': ['Home', 'Portfolio', 'Skills', 'About']
@@ -23,5 +23,8 @@ $(document).ready(function() {
 	    }
 	});
 });
+
+
+
 
 
