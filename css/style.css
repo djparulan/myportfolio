@@ -48,6 +48,9 @@ abbr,acronym { border: 0;
  * --------------------------------------- */
 body{
 	font-family: 'Lato', Calibri, Arial, sans-serif;
+	/*font-family: 'Syncopate', sans-serif;*/
+	/*font-family: 'Allerta Stencil', sans-serif;*/
+
 	color: #f2f2f2;
 }
 h1{
@@ -362,23 +365,133 @@ p{
 	color: #AAA;
 }
 
-.web {
-	padding: 10px;
+.portfolio {
+	padding: 50px;
 }
 
-.web-pic:hover {
-	opacity: 0.7;
+.webs {
+	height:450px;
+}
+
+.web-container {
+	padding: 15px;
+	height: 100%;
+}
+
+.web-container a{
+	width: 100%;
+	height: 100%;
+}
+
+.web {
+	position: relative;
+	background-color: gray;
+	overflow: hidden;
+	height: 100%;
+	z-index: 1;
 }
 
 .web-pic {
-	margin-bottom: 50px;
-	transition: 0.5s;
+	height: 80%;
+	position: absolute;
+	top: 50%;
+	left: 80%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
 }
 
-.web-info > p {
-	font-size: 20px;
+.web-cover {
+	z-index: 10;
+	height: 100%;
 	width: 100%;
+	background-color: rgba(0,0,0,0.8);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	transition: 0.4s;
 }
+
+.web:hover .web-cover {
+	opacity: 0;
+}
+
+.web-cover .circle-number {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	border: 5px solid #988345;
+	border-radius: 50%;
+	height: 100px;
+	width: 100px;
+	transition: 0.4s;
+}
+
+.web:hover .circle-number {
+	height: 120px;
+	width: 120px;
+}
+
+.circle-number h1 {
+	position: absolute;
+	top: 15%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #988345;
+	transition: 0.4s;
+} 
+
+.web:hover .circle-number > h1 {
+	font-size: 85px;
+}
+
+.web-info {
+	z-index: 10;
+	height: 120px;
+	width: 100%;
+	background-color: rgba(0,0,0,0);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 30px;
+	transition: 0.4s;
+}
+
+.web:hover .web-info {
+	background-color: rgba(0,0,0,0.8);
+	height: 150px;
+}
+
+.web-info h5 {
+	text-align: left;
+}
+
+.web-info .line1 {
+	margin-right: 5px;
+	border: 3px solid #988345;
+}
+
+.web-info .line2 {
+	border-color: #585858;
+}
+
+.web-info h6 {
+	text-align: left !important;
+	color: white;
+	opacity: 0;
+	transition: 0.4s;
+}
+
+.web:hover .web-info > h6{
+	opacity: 1;
+}
+
+.portfolio-title {
+	color: #988345;
+}
+
+
 
 @keyframes float {
 	0% {
@@ -431,11 +544,15 @@ p{
 	border-left: 2px solid white;
 }
 
+.about-left h1 {
+	color: #988345;
+}
+
 .skill {
 	width: 150px;
 	height: 150px;
 	border-radius: 50%;
-	border: 2px solid white;
+	border: 2px solid #988345;
 	position: relative;
 	margin: 10px;
 }
@@ -475,10 +592,48 @@ p{
 	color: white;
 }
 
+#name {
+	color: #988345 !important;
+}
+
 #name + p {
 	font-size: 50px;
 	color: lightgray;
 }
+
+.left-bg {
+	background-color: #101011;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+	height: 100vh;
+	width: 50vw;
+}
+
+.diagonal-bg {
+	background: linear-gradient(to left bottom, transparent 50%, #101011 50%);
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	z-index: -1;
+	left: 0;
+	top: 0;
+}
+
+.horizontal-bg {
+	background: linear-gradient(to right bottom, transparent 50%, #101011 50%);
+	height: 100vh;
+	width: 100vw;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	position: absolute;
+}
+
+
+
+
 
 
 
