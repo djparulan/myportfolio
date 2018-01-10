@@ -527,7 +527,7 @@ p{
 	overflow: hidden;
 	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
 	transform: translatey(0px);
-	animation: float 6s ease-in-out infinite;
+	/*animation: float 6s ease-in-out infinite;*/
 	margin: 0 auto;
 	position: relative;
 }
@@ -592,13 +592,18 @@ p{
 	color: white;
 }
 
-#name {
+h1#name {
 	color: #988345 !important;
+	/*font-size: 100px;*/
 }
 
-#name + p {
+p#profession {
 	font-size: 50px;
-	color: lightgray;
+	color: white;
+}
+
+p#contact {
+
 }
 
 .left-bg {
@@ -632,7 +637,47 @@ p{
 }
 
 
+@media only screen and (max-width: 991px){
+	h1#name {
+		font-size: 100px;
+	}
 
+	p#profession {
+		font-size: 30px;
+	}
+
+	p#contact {
+		font-size: 20px;
+	}
+
+	.avatar {
+		width: 200px;
+		height: 200px;
+	}
+
+
+
+}
+
+@media only screen and (max-width: 1499px) {
+	.web-container {
+		height: 350px;
+	}
+	.skill {
+		height: 100px;
+		width: 100px;
+	}
+}
+
+@media only screen and (max-width: 643px) {
+	/*#section3 .row {
+		margin-top: 100px;
+	}*/
+	.skill {
+		height: 70px;
+		width: 70px;
+	}
+}
 
 
 
